@@ -90,8 +90,7 @@
 ![image](./images/part-2_task-2.2_1.1.png) \
 ![image](./images/part-2_task-2.2_1.2.png)
 
-- Пропинговать соединение между машинами \
-
+- Пропинговать соединение между машинами 
 ![image](./images/part-2_task-2.2_1.3.png) \
 ![image](./images/part-2_task-2.2_1.4.png) 
 
