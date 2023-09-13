@@ -53,7 +53,7 @@
 ## Part 2. Статическая маршрутизация между двумя машинами
 
 - Поднять две виртуальные машины (далее -- ws1 и ws2) \
-![image](./images/part-2_task-2.0_1.1.png.png) 
+![image](./images/part-2_task-2.0_1.1.png)
 
 - Вывод команды ip a \
 ![image](./images/part-2_task-2.0_2.1.png) \
