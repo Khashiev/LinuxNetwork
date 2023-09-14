@@ -94,4 +94,19 @@
 ![image](./images/part-2_task-2.2_1.3.png) \
 ![image](./images/part-2_task-2.2_1.4.png) 
 
+## Part 3. Утилита iperf3
 
+### 3.1. Скорость соединения
+
+- Перевести и записать в отчёт: 8 Mbps в MB/s, 100 MB/s в Kbps, 1 Gbps в Mbps \
+
+``8 Mbps = 1 MB/s`` \
+``100 MB/s = 800 000 Kbps`` \
+``1 Gbps = 1000 Mbps``
+
+## 3.2. Утилита iperf3 
+
+- Измерить скорость соединения между ws1 и ws2 \
+
+![image](./images/part-3_task-3.2_1.1.png) \
+![image](./images/part-3_task-3.2_1.2.png) 
