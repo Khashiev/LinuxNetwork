@@ -115,12 +115,12 @@
 
 ### 4.1. Утилита iptables
 
-- Создать файл /etc/firewall.sh, имитирующий фаерволл, на ws1 и ws2: \
+- Создать файл /etc/firewall.sh, имитирующий фаерволл, на ws1 и ws2: 
 
 ![image](./images/part-4_task-4.1_1.1.png) \
 ![image](./images/part-4_task-4.1_1.2.png) 
 
-- Запустить файлы на обеих машинах командами chmod +x /etc/firewall.sh и /etc/firewall.sh \
+- Запустить файлы на обеих машинах командами chmod +x /etc/firewall.sh и /etc/firewall.sh 
 
 ![image](./images/part-4_task-4.1_2.1.png) \
 ![image](./images/part-4_task-4.1_2.2.png) 
@@ -129,7 +129,7 @@
 
 ### 4.2. Утилита nmap
 
-- Командой ping найти машину, которая не "пингуется", после чего утилитой nmap показать, что хост машины запущен \
+- Командой ping найти машину, которая не "пингуется", после чего утилитой nmap показать, что хост машины запущен 
 
 ![image](./images/part-4_task-4.2_1.1.png) \
 ![image](./images/part-4_task-4.2_1.2.png) 
