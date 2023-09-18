@@ -133,3 +133,52 @@
 
 ![image](./images/part-4_task-4.2_1.1.png) \
 ![image](./images/part-4_task-4.2_1.2.png) 
+
+
+## Part 5. Статическая маршрутизация сети
+
+![image](../misc/images/part5_network.png) 
+
+- Поднять пять виртуальных машин (3 рабочие станции (ws11, ws21, ws22) и 2 роутера (r1, r2)) 
+
+![image](./images/part-5_task-5.0_.1.1.png) 
+
+### 5.1. Настройка адресов машин
+
+- Настроить конфигурации машин в etc/netplan/00-installer-config.yaml согласно сети на рисунке 
+
+![image](./images/part-5_task-5.1_.1.1.png) 
+
+![image](./images/part-5_task-5.1_.1.2.png) 
+
+![image](./images/part-5_task-5.1_.1.3.png) 
+
+![image](./images/part-5_task-5.1_.1.4.png) 
+
+![image](./images/part-5_task-5.1_.1.5.png) 
+
+- Перезапустить сервис сети. Если ошибок нет, то командой ip -4 a проверить, что адрес машины задан верно
+
+![image](./images/part-5_task-5.1_.2.1.png) 
+
+![image](./images/part-5_task-5.1_.2.2.png) 
+
+![image](./images/part-5_task-5.1_.2.3.png) 
+
+![image](./images/part-5_task-5.1_.2.4.png) 
+
+![image](./images/part-5_task-5.1_.2.5.png) 
+
+- Пропинговать ws22 с ws21. Аналогично пропинговать r1 с ws11
+
+![image](./images/part-5_task-5.1_.3.1.png) 
+
+![image](./images/part-5_task-5.1_.3.2.png) 
+
+
+
+
+
+
+
+
