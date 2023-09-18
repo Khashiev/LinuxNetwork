@@ -176,9 +176,15 @@
 ![image](./images/part-5_task-5.1_.3.2.png) 
 
 
+### 5.2. Включение переадресации IP-адресов
 
+- Для включения переадресации IP, выполните команду ``sysctl -w net.ipv4.ip_forward=1`` на роутерах
 
+![image](./images/part-5_task-5.2_.1.1.png) 
 
+![image](./images/part-5_task-5.2_.1.2.png) 
 
+- Откройте файл /etc/sysctl.conf и добавьте в него следующую строку: ``net.ipv4.ip_forward = 1``
 
+![image](./images/part-5_task-5.2_.2.1.png) 
 
