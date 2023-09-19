@@ -287,3 +287,6 @@
 ![image](./images/part-6_task-6.4_1.6.png) 
 
 ![image](./images/part-6_task-6.4_1.7.png) 
+
+- DHCP server options: \
+``Subnet-mask, routers, domain-name-servers``
