@@ -251,3 +251,19 @@
 - Пропинговать с ws11 несуществующий IP (например, 10.30.0.111) с помощью команды: ``ping -c 1 10.30.0.111``
 
 ![image](./images/part-5_task-5.5_1.2.png) 
+
+
+## Part 6. Динамическая настройка IP с помощью DHCP
+
+- Для r2 настроить в файле /etc/dhcp/dhcpd.conf конфигурацию службы DHCP
+
+![image](./images/part-6_task-6.1_1.1.png) 
+
+![image](./images/part-6_task-6.1_1.2.png) 
+
+- Перезагрузить службу DHCP командой ``systemctl restart isc-dhcp-server``. Машину ws21 перезагрузить при помощи ``reboot`` и через ``ip a`` показать, что она получила адрес. Также пропинговать ws22 с ws21.
+
+![image](./images/part-6_task-6.2_1.1.png) 
+![image](./images/part-6_task-6.2_1.2.png) 
+
+- Указать MAC адрес у ws11, для этого в etc/netplan/00-installer-config.yaml надо добавить строки: macaddress: 10:10:10:10:10:BA, dhcp4: true
