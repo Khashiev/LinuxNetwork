@@ -267,3 +267,7 @@
 ![image](./images/part-6_task-6.2_1.2.png) 
 
 - Указать MAC адрес у ws11, для этого в etc/netplan/00-installer-config.yaml надо добавить строки: macaddress: 10:10:10:10:10:BA, dhcp4: true
+
+![image](./images/part-6_task-6.3_1.1.png) 
+
+- Для r1 настроить аналогично r2, но сделать выдачу адресов с жесткой привязкой к MAC-адресу (ws11). Провести аналогичные тесты
