@@ -255,7 +255,7 @@
 
 ## Part 6. Динамическая настройка IP с помощью DHCP
 
-- Для r2 настроить в файле /etc/dhcp/dhcpd.conf конфигурацию службы DHCP
+- Для r2 настроить в файле ``/etc/dhcp/dhcpd.conf`` конфигурацию службы DHCP
 
 ![image](./images/part-6_task-6.1_1.1.png) 
 
@@ -266,8 +266,24 @@
 ![image](./images/part-6_task-6.2_1.1.png) 
 ![image](./images/part-6_task-6.2_1.2.png) 
 
-- Указать MAC адрес у ws11, для этого в etc/netplan/00-installer-config.yaml надо добавить строки: macaddress: 10:10:10:10:10:BA, dhcp4: true
+- Указать MAC адрес у ws11, для этого в ``etc/netplan/00-installer-config.yaml`` надо добавить строки: ``macaddress: 10:10:10:10:10:BA, dhcp4: true``
 
 ![image](./images/part-6_task-6.3_1.1.png) 
 
 - Для r1 настроить аналогично r2, но сделать выдачу адресов с жесткой привязкой к MAC-адресу (ws11). Провести аналогичные тесты
+
+![image](./images/part-6_task-6.4_1.1.png) 
+
+![image](./images/part-6_task-6.4_1.2.png) 
+
+![image](./images/part-6_task-6.4_1.3.png) 
+
+![image](./images/part-6_task-6.4_1.4.png) 
+
+![image](./images/part-6_task-6.4_1.5.png) 
+
+- Запросить с ws21 обновление ip адреса
+
+![image](./images/part-6_task-6.4_1.6.png) 
+
+![image](./images/part-6_task-6.4_1.7.png) 
