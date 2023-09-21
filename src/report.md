@@ -352,11 +352,9 @@
 
 - Воспользоваться Local TCP forwarding с ws21 до ws22, чтобы получить доступ к веб-серверу на ws22 с ws21
 
-![image](./images/part-8_task-8)
+![image](./images/part-8_task-8.2_1.1.png)
 
 - Воспользоваться Remote TCP forwarding c ws11 до ws22, чтобы получить доступ к веб-серверу на ws22 с ws11
-
-![image](./images/part-8_task-8.2_1.1.png)
 
 ![image](./images/part-8_task-8.2_1.2.png)
 
