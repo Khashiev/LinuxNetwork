@@ -338,4 +338,30 @@
 ![image](./images/part-7_task-7.5_1.1.png)
 
 
+## Part 8. Дополнительно. Знакомство с SSH Tunnels
 
+- Запустить на r2 фаервол с правилами из Части 7
+
+![image](./images/part-8_task-8.1_1.1.png)
+
+- Запустить веб-сервер Apache на ws22 только на localhost (то есть в файле /etc/apache2/ports.conf изменить строку Listen 80 на Listen localhost:80)
+
+![image](./images/part-8_task-8.1_2.1.png)
+
+![image](./images/part-8_task-8.1_2.2.png)
+
+- Воспользоваться Local TCP forwarding с ws21 до ws22, чтобы получить доступ к веб-серверу на ws22 с ws21
+
+![image](./images/part-8_task-8)
+
+- Воспользоваться Remote TCP forwarding c ws11 до ws22, чтобы получить доступ к веб-серверу на ws22 с ws11
+
+![image](./images/part-8_task-8.2_1.1.png)
+
+![image](./images/part-8_task-8.2_1.2.png)
+
+- Для проверки, сработало ли подключение в обоих предыдущих пунктах, перейдите во второй терминал (например, клавишами Alt + F2) и выполните команду: ``telnet 127.0.0.1 [локальный порт]``
+
+![image](./images/part-8_task-8.3_1.1.png)
+
+![image](./images/part-8_task-8.3_1.1.png)
