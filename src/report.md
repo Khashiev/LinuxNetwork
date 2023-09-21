@@ -364,4 +364,4 @@
 
 ![image](./images/part-8_task-8.3_1.1.png)
 
-![image](./images/part-8_task-8.3_1.1.png)
+![image](./images/part-8_task-8.3_1.2.png)
