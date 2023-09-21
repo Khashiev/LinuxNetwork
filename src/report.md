@@ -290,3 +290,52 @@
 
 - DHCP server options: \
 ``Subnet-mask, routers, domain-name-servers``
+
+
+## Part 7. NAT
+
+- В файле /etc/apache2/ports.conf на ws22 и r1 изменить строку ``Listen 80`` на ``Listen 0.0.0.0:80``, то есть сделать сервер Apache2 общедоступным
+
+![image](./images/part-7_task-7.1_1.1.png) 
+
+![image](./images/part-7_task-7.1_1.2.png) 
+
+- Запустить веб-сервер Apache командой ``service apache2 start`` на ws22 и r1
+
+![image](./images/part-7_task-7.2_1.1.png) 
+
+![image](./images/part-7_task-7.2_1.2.png) 
+
+- Добавить в фаервол, созданный по аналогии с фаерволом из Части 4, на r2 следующие правила: ``iptables -F, iptables -F -t nat, iptables --policy FORWARD DROP``
+
+![image](./images/part-7_task-7.3_1.1.png) 
+
+- Запускать файл также, как в Части 4,  проверить соединение между ws22 и r1 командой ``ping``
+
+![image](./images/part-7_task-7.3_2.1.png) 
+
+![image](./images/part-7_task-7.3_2.2.png) 
+
+- Разрешить маршрутизацию всех пакетов протокола ICMP, запустить файл, проверить соединение между ws22 и r1 командой ``ping``
+
+![image](./images/part-7_task-7.3_3.1.png) 
+
+![image](./images/part-7_task-7.3_3.2.png) 
+
+- Добавить в файл ещё два правила: 
+
+1. Включить SNAT, а именно маскирование всех локальных ip из локальной сети, находящейся за r2 (по обозначениям из Части 5 - сеть 10.20.0.0) \
+2. Включить DNAT на 8080 порт машины r2 и добавить к веб-серверу Apache, запущенному на ws22, доступ извне сети
+
+![image](./images/part-7_task-7.3_4.1.png)
+
+- Запустить файл, проверить соединение по TCP для SNAT, для этого с ws22 подключиться к серверу Apache на r1 командой: ``telnet [адрес] [порт]``
+
+![image](./images/part-7_task-7.4_1.1.png)
+
+- Проверить соединение по TCP для DNAT, для этого с r1 подключиться к серверу Apache на ws22 командой ``telnet`` (обращаться по адресу r2 и порту 8080)
+
+- ![image](./images/part-7_task-7.5_1.1.png)
+
+
+
